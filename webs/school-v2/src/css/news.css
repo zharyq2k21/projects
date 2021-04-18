@@ -71,3 +71,22 @@
 .paginator .pages{
     font-weight: 500;
 }
+
+/* Медиа запросы */
+@media screen and (max-width: 1220px) {
+    .content-container{
+        margin: 100px 100px;
+    }
+    .content-container .card .image img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .content-container{
+        margin: 30px 10px;
+    }
+    .content-container .card .image img{
+        width: 350px;
+    }
+}
