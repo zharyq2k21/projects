@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*, html, body, #game{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: #eee;
+}
+
+/* Game */
+#game{
+    position: fixed;
+    top: auto;
+    left: auto;
+    width: 320px;
+    height: 100%;
+    background: #212121;
+    box-shadow: 0 0 40px rgba(33, 33, 33, 0.500);
+    border-radius: 5px;
+    color: #eee;
+}
+/* Game Score */
+.game__score{
+    margin: 15px 0 0 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.game__score .score{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/* Game Reset button */
+.game__reset{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.game__reset .reset{
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.game__reset .reset:hover{
+    color: #bebebe;
+}
+
+
+/* Game Body */
+.game__body{
+    display: flex;
+    justify-content: center;
+    margin: 180px 0 0 0;
+    cursor: pointer;
+}
+.game__body .button{
+    font-size: 25px;    
+    font-weight: 500;
+    background: #939b62;
+    padding: 55px 40px;
+    border-radius: 100px;
+}
+
+
+
+@media screen and (max-width: 500px){
+    #game{
+        width: 100%;
+    }
+}

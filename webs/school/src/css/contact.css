@@ -1,0 +1,87 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    margin: 20px 200px;
+    box-shadow: 0 0 15px rgba(10, 55, 48, 0.05);
+    min-height: 300px;
+}
+.contact .contact-box .title{
+    font-weight: 600;
+    font-size: 26px;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.contact .contact-box .social{
+    display: flex;
+}
+.contact .contact-box .social li{
+    margin: 0 100px;
+}
+.contact .contact-box .social .item-box{
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-box .social .item-box a{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.contact .contact-box .social .item-box a img{
+    margin: 0 5px 0 0;
+}
+.contact .contact-box .social .feedback-form form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-box .social .feedback-form form input[type=email]{
+    padding: 3px 7px;
+    outline: none;
+    font-weight: 500;
+}
+.contact .contact-box .social .feedback-form form input[type=submit]{
+    background: #0a3730;
+    color: #faeaf0;
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.contact .contact-box .social .feedback-form form textarea{
+    padding: 5px;
+    font-weight: 500;
+}
+.contact .contact-box .social .feedback-form form input,
+.contact .contact-box .social .feedback-form form textarea{
+    margin: 5px 0;
+}
+
+
+@media (max-width: 1150px) {
+    .contact .contact-box .social{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .contact-box .social .item-box a{
+        display: flex;
+        justify-content: center;
+    }
+    .contact .contact-box .social li{
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 740px) {
+    .contact{
+        margin: 20px 100px;
+    }
+
+}
+@media (max-width: 530px) {
+    .contact{
+        margin: 0px;
+        box-shadow: none;
+    }
+
+}

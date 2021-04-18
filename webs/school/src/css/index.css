@@ -1,0 +1,78 @@
+@import url("./base.css");
+
+.content .content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 140px;
+}
+.content .content-box .content-item{
+    margin: 0 20px;
+}
+.content .content-box .content-item div{
+    margin: 20px 0;
+}
+.content .content-box .content-item .title{
+    font-weight: 600;
+    font-size: 38px;
+}
+.content .content-box .content-item .title span{
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.content .content-box .content-item .desc{
+    font-size: 20px;
+}
+.content .content-box .content-item .link-button{
+    margin: 10px 0 0 0;
+}
+.content .content-box .content-item .link-button a{
+    background: #0a3730;
+    color: #fae9ef;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+
+
+
+@media screen and (max-width: 880px) {
+    .content .content-box{
+        padding: 20px 70px;
+        flex-direction: column-reverse;
+    }
+    .content .content-box .content-item .title{
+        text-align: center;
+        font-size: 30px;
+    }
+    .content .content-box .content-item .title span{
+        text-align: center;
+        font-size: 30px;
+    }
+    .content .content-box .content-item img{
+        width: 200px;
+    }
+    .content .content-box .content-item .desc{
+        text-align: center;
+    }
+    .content .content-box .content-item .link-button{
+        text-align: center;
+    }
+    .content .content-box .welcome{
+        margin: 0 0 50px 0;
+    }
+}
+
+    /* 425px */
+@media screen and (max-width: 425px) {
+    .content .content-box .content-item .title,
+    .content .content-box .content-item .title span{
+        font-size: 25px;
+    }
+    .content .content-box .content-item .desc{
+        font-size: 18px;
+    }
+
+
+}
