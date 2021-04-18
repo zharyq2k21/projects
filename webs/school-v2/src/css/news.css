@@ -1,0 +1,73 @@
+@import url("./nav.css");
+
+/* Задний фон школы */
+.background img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+/* Новости */
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F8F5F1;
+    box-shadow: 0 0 10px #45526C;
+    border: 3px solid #45526C;
+    margin: 150px 200px;
+}
+
+/* Поиск */
+.content-container .search-box{
+    margin: 40px;
+}
+.content-container .search-box .search-form input[type=search]{
+    padding: 7px 15px;
+    outline: none;
+    border: 3px solid #45526C;
+}
+
+/* Кард */
+.content-container .card{
+    margin: 0 120px;
+}
+.content-container .card .title a{
+    text-align: justify;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+.content-container .card .info .item{
+    display: inline-flex;
+}
+.content-container .card .info .item img{
+    margin: 0 5px 0 0;
+}
+.content-container .card .break{
+    height: 3px;
+    background: #45526C;
+    margin: 30px 0;
+}
+
+/* Пагинатор */
+.paginator{
+    margin: 0 0 20px 0;
+}
+.paginator .item{
+    background: #45526C;
+    color: #F8F5F1;
+    padding: 5px 15px;
+}
+.paginator .disabled{
+    background: #45526C;
+    color: hsla(34, 33%, 96%, 0.7);
+    cursor: default;
+    padding: 5px 15px;
+}
+.paginator .pages{
+    font-weight: 500;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СОШ 54 | Новости</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/news.css">
+</head>
+<body>
+    
+    <div id="root">
+        <!-- Навигация -->
+        <div class="nav-container">
+            <div class="nav__logo">
+                <img src="./src/img/logo.png" width="55">
+                <a href="/">сош 54</a>
+            </div>
+            <div class="nav__items">
+                <img src="./src/img/cancel.png" class="close" width="33">
+                <a href="./index.html" class="item anim">Главная</a>
+                <a href="./news.html" class="item anim">Новости</a>
+                <a href="./contact.html" class="item anim">Контакты</a>
+                <img src="./src/img/lang.png" class="item lang" width="35">
+            </div>
+            <div class="nav__menu">
+                <img src="./src/img/menu.png" width="35">
+            </div>
+        </div>
+        <!-- Навигация Конец -->
+
+        <!-- Контент -->
+        <div class="background">
+            <img src="./src/img/school.png" >
+        </div>
+        <div class="content-container">
+            <!-- Поиск -->
+            <div class="search-box">
+                <form class="search-form">
+                    <input type="search" name="q" placeholder="Поиск по сайту">
+
+                </form>
+            </div>
+
+            <!-- Кард -->
+            <div class="card">
+                <div class="image">
+                    <img src="./src/img/post.png" width="800">
+                </div>
+                <div class="info">
+                    <span class="date item"> <img src="./src/img/calendar.png" width="18"> <span> 18.01.2021 </span></span>
+                    <span class="user item"> <img src="./src/img/user.png" width="22"> Aziqul Maulen </span>
+                </div>
+                <div class="title">
+                    <a href="">
+                        «Пиктограмма» или как исследовать опосредованную память, ассоциативное мышление у людей, имеющих психическое заболевание
+                    </a>
+                </div>
+                <hr class="break">
+            </div>
+
+            <!-- Пагинатор -->
+            <div class="paginator">
+                <a href="" class="prev disabled">Предыдущий</a>
+                <span class="pages">1 из 5</span>
+                <a href="" class="next item">Следующий</a>
+            </div>
+        </div>
+        <!-- Контент Конец -->
+    </div>
+
+
+    <script src="./src/js/menu.js"></script>
+</body>
+</html>

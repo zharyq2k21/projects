@@ -1,0 +1,77 @@
+@import url("./nav.css");
+
+/* Задний фон школы */
+.background img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+
+/* Контакты */
+.content-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #F8F5F1;
+    box-shadow: 0 0 10px #45526C;
+    border: 3px solid #45526C;
+    margin: 150px 200px 0 200px;
+    height: 400px;
+}
+.content-container .feedback{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 20px 40px;
+}
+.content-container .feedback .title{
+    font-weight: 600;
+    font-size: 26px;
+}
+.content-container .feedback .feedback-form {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content-container .feedback .feedback-form .email{
+    border: 3px solid #45526C;
+    padding: 6px 12px;
+}
+.content-container .feedback .feedback-form textarea{
+    border: 3px solid #45526C;
+    padding: 6px 12px;
+    height: 100px;
+
+}
+.content-container .feedback .feedback-form .send{
+    border: 3px solid #45526C;
+    padding: 6px 12px;
+    background: #45526C;
+    color: #F8F5F1;
+}
+.content-container .feedback .feedback-form input, textarea{
+    margin: 5px 0;
+    width: 300px;
+    outline: none;
+}
+
+/* Конакты */
+.content-container .contact{
+    margin: 20px 40px 20px 0;
+}
+.content-container .contact .title{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.content-container .contact .social .item{
+    display: flex;
+    margin: 20px 0;
+}
+.content-container .contact .social .item img{
+    margin: 0 3px 0 0;
+}

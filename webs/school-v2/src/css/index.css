@@ -1,0 +1,80 @@
+@import url("./nav.css");
+
+/* Контент */
+.content-container{
+    background: #F8F5F1;
+    border: 3px solid #45526C;
+    box-shadow: 0 0 15px #45526C;
+    margin: 60px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+.content-container .box{
+    margin: 40px 10px 40px 40px;
+}
+.content-container .box .title{
+    font-weight: 600;
+    font-size: 32px;
+}
+.content-container .box .desc{
+    font-size: 20px;
+}
+
+.content-container .box .item{
+    margin: 10px 0;
+}
+
+.content-container .box .news-button{
+    margin: 23px 0 0 0;
+}
+.content-container .box .news-button a{
+    background: #45526C;
+    color: #F8F5F1;
+    padding: 8px 35px;
+}
+
+.content-container .logo{
+    margin: 0 40px 0 0;
+}
+
+
+/* Медия запросы */
+@media screen and (max-width: 1170px) {
+    .content-container {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .content-container .logo{
+        margin: 40px 0 0 0;
+    }
+    .content-container .box .item{
+        text-align: center;
+        margin: 10px 20px;
+        
+    }
+    .content-container .box .news-button{
+        margin: 25px 0;
+    }
+    .content-container .box{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .content-container{
+        box-shadow: none;
+        width: 100%;
+        margin: 5px 0 0 0;
+        border: none;
+    }
+}
+
+
+/* Мобильная версия */
+@media screen and (max-width: 550px) {
+    .content-container .box .title{
+        font-size: 26px;
+    }
+}
